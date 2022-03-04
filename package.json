@@ -2,20 +2,24 @@
     "name": "react-redux-toolkit-typescript-example",
     "version": "0.1.0",
     "private": true,
-    "proxy":"http://localhost:3001",
+    "proxy": "http://localhost:6104",
     "dependencies": {
         "@reduxjs/toolkit": "^1.4.0",
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.5.0",
         "@testing-library/user-event": "^7.2.1",
+        "@types/app-root-path": "^1.2.4",
         "@types/jest": "^24.9.1",
         "@types/react": "^16.9.41",
         "@types/react-dom": "^16.9.8",
+        "@types/redux-logger": "^3.0.9",
+        "app-root-path": "^3.0.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-redux": "^7.2.1",
         "react-scripts": "^3.4.3",
-        "redux": "^4.0.5"
+        "redux": "^4.0.5",
+        "redux-logger": "^3.0.6"
     },
     "scripts": {
         "start": "concurrently \"npm run server\" \"npm run client\"",

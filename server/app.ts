@@ -1,10 +1,13 @@
+import appRootPath from 'app-root-path';
 import express from 'express';
 import path from 'path';
 import { indexRouter } from './routes';
 const app = express();
-const PORT = 3001;
+const PORT = 6104;
 app.all('/*', indexRouter);
-app.use(express.static(path.join(__dirname, '../build')));
+console.log(`${appRootPath}/build`);
+app.use(express.static(`${appRootPath}/build`));
+app.use(express.static(`${appRootPath}/public`));
 app.listen(PORT, () => {
     console.log(`
   ################################################

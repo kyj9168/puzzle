@@ -1,9 +1,10 @@
+import appRootPath from 'app-root-path';
 import express from 'express';
 import path from 'path';
 export const indexRouter = express.Router();
 indexRouter.get('/', (req, res, next) => {
     console.log(45465);
-    res.sendFile(path.join(__dirname, '../../build/index.html'));
+    res.sendFile(`${appRootPath}/build/index.html`);
 });
 indexRouter.get('/test', (req, res, next) => {
     console.log(123123);

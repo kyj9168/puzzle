@@ -1,17 +1,15 @@
-import React from 'react';
-import './App.css';
-import ColorSelector from "./components/color-selector/ColorSelector";
-import ColorDisplay from "./components/color-display/ColorDisplay";
-import ColorSaturation from "./components/color-saturation/ColorSaturation";
+import React, { FormEvent, useState } from 'react';
 
-function App() {
+import User from 'src/components/pages/User';
+import Puzzle from 'src/components/pages/Puzzle';
+
+const App = () => {
     return (
-        <div className="App">
-            <ColorSelector/>
-            <ColorSaturation/>
-            <ColorDisplay/>
-        </div>
+        <>
+            <User />
+            <Puzzle />
+        </>
     );
-}
+};
 
 export default App;
