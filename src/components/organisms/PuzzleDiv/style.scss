@@ -1,0 +1,59 @@
+.puzzleBody {
+    width: fit-content;
+    height: fit-content;
+}
+.puzzleDiv {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    // transition: all 1s;
+    div {
+        height: 100%;
+        align-items: center;
+        margin: 3px;
+        border: 2px solid #000;
+        border-radius: 5px;
+        background-color: rgb(250, 186, 10);
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+.puzzleDiv-enter {
+    transition: all 400ms ease-out;
+}
+.puzzleDiv-enter-active {
+    opacity: 1;
+    transition: all 400ms ease-out;
+}
+.puzzleDiv-exit {
+    opacity: 1;
+    transition: all 400ms ease-out;
+}
+.puzzleDiv-exit-active {
+    opacity: 0;
+    transition: all 400ms ease-out;
+}
+// $window-width: 150px;
+
+// @for $i from 0 to 16 {
+//     .item#{$i} {
+//         position: absolute;
+//         width: $window-width;
+//         height: $window-width;
+//         left: ($i % 4) * $window-width;
+//         top: floor($i / 4) * $window-width;
+//         transition: all 0.3s;
+//     }
+// }
+
+// .item0 {
+//     left: 125px;
+//     top: 0px;
+// }
+
+// .item0 {
+//     left: 125px;
+//     top: 0px;
+// }

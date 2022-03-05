@@ -6,7 +6,7 @@ import Puzzle from 'src/components/pages/Puzzle';
 const App = () => {
     return (
         <>
-            <User />
+            {/* <User /> */}
             <Puzzle />
         </>
     );

@@ -1,6 +1,6 @@
 import React, { FormEvent, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { User, addUser } from '../../../../slice/users';
+import { User, addUser, changeUser } from '../../../../slice/users';
 
 const UserForm = () => {
     const dispatch = useDispatch();
@@ -13,7 +13,9 @@ const UserForm = () => {
 
     const handleAddUser = (e: FormEvent) => {
         e.preventDefault();
-        dispatch(addUser({ name } as User));
+        // dispatch(addUser({ name } as User));
+        dispatch(changeUser());
+
         setName('');
     };
 

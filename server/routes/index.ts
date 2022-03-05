@@ -12,5 +12,5 @@ indexRouter.get('/test', (req, res, next) => {
 });
 indexRouter.post('/post', (req, res, next) => {
     console.log(123123);
-    res.send('post입니다.');
+    res.send({ id: 1, name: 'User123' });
 });

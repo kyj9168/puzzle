@@ -1,10 +1,10 @@
 import React, { FormEvent, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { ReducerType } from 'src/rootReducer';
+import { RootState } from 'src/app/rootReducer';
 import { User, addUser } from 'src/slice/users';
 
 const UserList = () => {
-    const users = useSelector<ReducerType, User[]>((state) => state.users);
+    const users = useSelector<RootState, User[]>((state) => state.users);
 
     return (
         <>

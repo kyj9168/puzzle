@@ -1,5 +1,6 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-
+import { createSlice, PayloadAction, createAsyncThunk } from '@reduxjs/toolkit';
+import { AppThunk } from 'src/app/store';
+import axios from 'axios';
 export interface User {
     id: number;
     name: string;
@@ -23,6 +24,16 @@ export const users = createSlice({
         },
     },
 });
+
+export const changeUser = (): AppThunk => async (dispatch) => {
+    try {
+        const { data } = await axios.post<User>('/post');
+        console.log(data);
+        dispatch(addUser(data))
+    } catch (err) {
+        // dispatch(getIssuesFailure(err.toString()));
+    }
+};
 
 // 액션과 리듀서를 export 해준다. 이건 그냥 따라하면 된다.
 export const { addUser } = users.actions;
