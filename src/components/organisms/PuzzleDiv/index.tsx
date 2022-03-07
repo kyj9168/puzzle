@@ -75,8 +75,8 @@ const PuzzleDiv = () => {
                             className="puzzleDiv"
                             key={'puzzleDiv_' + idx}
                             style={{
-                                width: width - 2 + 'px',
-                                height: width - 2 + 'px',
+                                width: width - 1 + 'px',
+                                height: width - 1 + 'px',
                                 position: 'absolute',
                                 backgroundSize: width * 4,
                                 backgroundRepeat: 'no-repeat',
