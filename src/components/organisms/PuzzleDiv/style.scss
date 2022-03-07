@@ -16,15 +16,18 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: "absolute";
+    background-image: url("/images/그림1.png");
+    background-repeat: no-repeat;
     // transition: all 1s;
     div {
         height: 100%;
         align-items: center;
-        margin: 3px;
-        border: 2px solid #999;
+        // margin: 1px;
+        // border: 2px solid #999;
         color: #999;
         opacity: 0.8;
-        border-radius: 5px;
+        // border-radius: 5px;
         // background-color: rgb(250, 186, 10);
         display: flex;
         justify-content: center;

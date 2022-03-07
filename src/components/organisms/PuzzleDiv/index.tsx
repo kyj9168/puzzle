@@ -75,8 +75,8 @@ const PuzzleDiv = () => {
                             className="puzzleDiv"
                             key={'puzzleDiv_' + idx}
                             style={{
-                                width: width + 'px',
-                                height: width + 'px',
+                                width: width - 2 + 'px',
+                                height: width - 2 + 'px',
                                 position: 'absolute',
                                 backgroundSize: width * 4,
                                 backgroundRepeat: 'no-repeat',
@@ -85,13 +85,11 @@ const PuzzleDiv = () => {
                                 transform: `translate3d(${(idx % 4) * width}px, ${Math.floor(idx / 4) * width}px, 0)`,
                             }}
                             onClick={() => changePuzzle(item)}
-                        >
-                            <div>{item}</div>
-                        </div>
-
+                        ></div>
                     ) : null;
                 })}
-                <img src='/images/그림1.png'/>
+
+                <img src="/images/그림1.png" />
             </div>
         </>
     );
